@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0"
+    <! adapta el ancho del contenido segun el dispositivo usado -->
+    <title>primer aplicativo web </title>
+</head>
+<body>
+    <header>
+        <h1>Melissa</h1>
+    </header>    <!encabezado-->
+    <nav>
+        <section>
+            <h2>Sobre mi:</h2>
+            <p>Hola! Soy Meli, tengo 21 años, estudio Química Farmacéutica en la UA y aprendo Desarrollo de Software con Riwi. Me apasionan los viajes, nadar, las historias de suspenso/crimen y cocinar para las personas que quiero.</p>
+            <h2>Proyectos:</h2>
+            <ul>
+                <li> <a href="https://github.com/MeliRobu/MeliRobu"> GitHub</a></li>
+                <li> <a href="">LinkedIn</a></li>
+                <li> <a href="https://github.com/MeliRobu/Ejercicios_20">Python</a></li>
+                <li> <a href="">Monografía toxicología</a></li>
+            </ul>
+            <h3>Contacto:</h3>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="nombre"  name="nombre" placeholder="sara"><br><br>
+            <label for="Email">Email:</label>
+            <input type="email" id="email"  name="email" placeholder="@example.com"><br><br>
+            <label for="celular">Celular:</label>
+            <input id="celular" name="celular" type="tel" list="defaultTels" />
+
+            <datalist id="defaultTels">
+            <option value="+57"></option>
+            <option value="+54"></option>
+            <option value="+34"></option>
+            </datalist>
+            <input type="tel" id="celular"  name="celular" placeholder="3250468248"><br><br>
+            <input type="button" value="ENVIAR">
+        </section>
+        </nav>
+
+</body>
+</html>
