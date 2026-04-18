@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 26%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(66, 62, 62);
+
+}
+
+header, footer {
+    height: 8%;
+    width: 100%;
+    border:  rgb(255, 72, 218) 3px solid;
+    display:flex;
+    justify-content: space-between; /*4 posiciones, arriba , derecha, abajo, izquierda, 0, 5, 0, 0 queda asi*/ 
+}
+
+header {
+    background: white;
+    position: fixed;
+    top: 0;
+    justify-content:center;
+    z-index: 100;
+    
+}
+header div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, ;
+    font-size: small;
+}   
+header nav {
+    height: 100%;
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, ;
+
+}
+header ul {
+    list-style: none;
+    display:flex;
+    gap: 10px; /*espacio entre palabras*/
+}
+footer{ 
+    background: white;
+    justify-content:center;
+}
+footer ul{ 
+    list-style: none;
+    display:flex;
+    gap: 10px; 
+}
+
+/* Selects the element when the mouse is over it */
+a:link {
+  color: rgb(53, 53, 255);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 72, 218);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(253, 47, 47);
+}
+
+/* selected link */
+a:active {
+  color: rgb(91, 222, 237);
+} 
+
+#home{
+    /*position: relative;*/
+    background-color: rgb(143, 77, 204) ;
+    text-align: center;
+    margin: 10% 10% 15% 10%;         /*4 posiciones, arriba , derecha, abajo, izquierda, 0, 5, 0, 0 queda asi*/ 
+    padding: 5%;
+    border: rgb(255, 255, 255) 10px solid;
+    border-radius:40px;
+}
+
+#home h1{
+    font-size: 50px;
+    line-height: 80px;
+    font-style:oblique;
+    text-align: center;
+
+}
+
+#text_home {
+
+    font-size: 20px;
+    line-height: 35px;
+
+}
+
+#yo {
+    background-color: rgb(113, 182, 182);
+    text-align: center;
+    margin:10%;
+    padding: 5%;
+    border: rgb(255, 255, 255) 10px solid;
+    border-radius:40px;
+    
+}
+#yo h2 
+{
+    font-size: 50px;
+    line-height: 35px;
+    text-align: center;
+
+
+}
+#yo p
+{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+
+}
+#proyectos{
+    background-color: rgb(127, 224, 180);
+    text-align: center;
+    margin:10% 30%;
+    padding: 5%;
+    border: rgb(255, 255, 255) 10px solid;
+    border-radius:40px;
+}
+#proyectos h2{
+    font-size: 50px;
+    text-align: center;
+
+}
+#proyectos ul{
+    font-size: 25px;
+    text-align: center;
+    list-style: none;
+}
+
+#contacto{
+    background-color: rgb(127, 132, 224);
+    text-align: center;
+    margin: 10% 30%;
+    padding: 5%;
+    border: rgb(255, 255, 255) 10px solid;
+    border-radius:40px;
+    justify-content: center;
+}
+
+#contacto h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+#contacto form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+#contacto input, select{
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 20px ;
+    display: flex;
+    text-align: center;
+
+}
+
