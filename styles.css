@@ -9,20 +9,21 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: rgb(66, 62, 62);
-
+    background: rgb(14, 14, 14);
 }
 
 header, footer {
     height: 8%;
     width: 100%;
     border:  rgb(255, 72, 218) 3px solid;
+    border-radius: 5px;
     display:flex;
     justify-content: space-between; /*4 posiciones, arriba , derecha, abajo, izquierda, 0, 5, 0, 0 queda asi*/ 
 }
 
 header {
-    background: white;
+    background: rgb(14, 14, 14);
+    color: white ;
     position: fixed;
     top: 0;
     justify-content:center;
@@ -47,13 +48,15 @@ header nav {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, ;
 
 }
+
 header ul {
     list-style: none;
     display:flex;
     gap: 10px; /*espacio entre palabras*/
 }
 footer{ 
-    background: white;
+    background: rgb(14, 14, 14);
+    color: white;
     justify-content:center;
 }
 footer ul{ 
@@ -61,7 +64,9 @@ footer ul{
     display:flex;
     gap: 10px; 
 }
-
+a{
+    text-decoration: none;
+}
 /* Selects the element when the mouse is over it */
 a:link {
   color: rgb(53, 53, 255);
@@ -84,12 +89,20 @@ a:active {
 
 #home{
     /*position: relative;*/
-    background-color: rgb(143, 77, 204) ;
+    background-color: transparent ;
     text-align: center;
     margin: 10% 10% 15% 10%;         /*4 posiciones, arriba , derecha, abajo, izquierda, 0, 5, 0, 0 queda asi*/ 
     padding: 5%;
     border: rgb(255, 255, 255) 10px solid;
     border-radius:40px;
+    color: white;
+}
+
+#home:hover{
+    background-color: rgb(143, 77, 204) ;
+    transform: translateY(-10px);
+    transition: 0.5s ease;
+    color: black;
 }
 
 #home h1{
@@ -101,29 +114,34 @@ a:active {
 }
 
 #text_home {
-
     font-size: 20px;
     line-height: 35px;
-
 }
 
 #yo {
-    background-color: rgb(113, 182, 182);
+    background-color: transparent;
     text-align: center;
-    margin:10%;
+    margin:10% 10% 15% 10%;
     padding: 5%;
     border: rgb(255, 255, 255) 10px solid;
     border-radius:40px;
+    color: white;
     
+}
+    
+#yo:hover{
+    background-color: rgb(113, 182, 182) ;
+    transform: translateY(-10px);
+    transition: 0.5s ease;
+    color: black;
 }
 #yo h2 
 {
     font-size: 50px;
     line-height: 35px;
     text-align: center;
-
-
 }
+
 #yo p
 {
     font-size: 20px;
@@ -132,18 +150,39 @@ a:active {
 
 }
 #proyectos{
-    background-color: rgb(127, 224, 180);
     text-align: center;
-    margin:10% 30%;
-    padding: 5%;
     border: rgb(255, 255, 255) 10px solid;
     border-radius:40px;
+    margin: 10% 10% 15% 10%;
 }
+
 #proyectos h2{
     font-size: 50px;
     text-align: center;
-
+    color: white;
+    padding-top: 80px;
 }
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 280px);
+    gap: 25px;
+    justify-content: center;
+    padding: 5% 15% ;
+}
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px blueviolet;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: translateY(-10px);
+    background-color: blueviolet;
+}
+
 #proyectos ul{
     font-size: 25px;
     text-align: center;
@@ -151,15 +190,21 @@ a:active {
 }
 
 #contacto{
-    background-color: rgb(127, 132, 224);
+    background-color: transparent;
     text-align: center;
     margin: 10% 30%;
     padding: 5%;
     border: rgb(255, 255, 255) 10px solid;
     border-radius:40px;
     justify-content: center;
+    color: white;
 }
-
+#contacto:hover{
+    background-color:rgb(127, 132, 224) ;
+    transform: translateY(-10px);
+    transition: 0.5s ease;
+    color: black;
+}
 #contacto h2{
     font-size: 40px;
     text-align: center;

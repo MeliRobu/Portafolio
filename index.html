@@ -4,55 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- adapta el ancho del contenido segun el dispositivo usado -->
-    <title>primer aplicativo web </title>
+    <title>first web application </title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
 <body>
     <header>
         <div>
-            <h1>PORTAFOLIO DE MELI</h1>
+            <h1>PORFOLIO</h1>
         </div>
         <nav>
             <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#yo">Sobre mi</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#yo">About Me</a></li>
+            <li><a href="#proyectos">Projects</a></li>
+            <li><a href="#contacto">Contact</a></li>
             </ul>
         </nav>
     </header>    <!--encabezado-->
-    <section id="home"><h1>Bienvenido a mi portafolio</h1><br><br>
-    <p id="text_home">Aqui encontrarás información sobre mi, mis proyectos y un apartado para que envies tu contacto y poder comunicarnos</p>
+    <section id="home"><h1>Welcome to my portfolio</h1><br><br>
+    <p id="text_home">Here you will find information about me, my projects and a section for you to send your contact and be able to communicate with us</p>
     </section>
 
     <section id="yo"> 
-        <h2>Sobre mi:</h2><br><br>
-        <p>Hola! Soy Meli, tengo 21 años, estudio Química Farmacéutica en la UA y aprendo Desarrollo de Software con Riwi. Me apasionan los viajes, nadar, las historias de suspenso/crimen y cocinar para las personas que quiero.</p>
+        <h2>About me:</h2><br><br>
+        <p>Hello! I'm Meli, I'm 21 years old, I study Pharmaceutical Chemistry at the UA and I'm learning Software Development with Riwi. I'm passionate about travel, swimming, thrill/crime stories and cooking for the people I love.</p>
     </section> 
 
-    <section id="proyectos">
+<section id="proyectos">
+    <h2>Projects:</h2>
 
-        <h2>Proyectos:</h2><br><br>
-            <nav>
-                <ul>
-                    <li> <a href="https://github.com/MeliRobu/MeliRobu" target="_blank"> GitHub</a></li>
-                    <li> <a href="">LinkedIn</a></li>
-                    <li> <a href="https://github.com/MeliRobu/Ejercicios_20" target="_blank">Python</a></li>
-                    <li> <a href="">Monografía toxicología</a></li>
-                    <li> <a href="" ">Pets</a></li>
+    <div class="cards">
 
-                </ul>
-            </nav>
+        <article class="card">
+            <h3>GitHub</h3>
+            <p>My personal repository and projects.</p>
+            <a href="https://github.com/MeliRobu/MeliRobu" target="_blank">View Project</a>
+        </article>
+
+        <article class="card">
+            <h3>LinkedIn</h3>
+            <p>Professional profile and networking.</p>
+            <a href="#">View Profile</a>
+        </article>
+
+        <article class="card">
+            <h3>Python Exercises</h3>
+            <p>Programming exercises made in Python.</p>
+            <a href="https://github.com/MeliRobu/Ejercicios_20" target="_blank">View Project</a>
+        </article>
+
+        <article class="card">
+            <h3>Monography</h3>
+            <p>Academic writing project.</p>
+            <a href="#">View Project</a>
+        </article>
+
+        <article class="card">
+            <h3>Pets Website</h3>
+            <p>HTML and CSS project about pets.</p>
+            <a href="http://127.0.0.1:5502/mascotas.html">View Project</a>
+        </article>
+
+    </div>
+</section>
     </section>
     <section id="contacto">
-        <h2>Contacto:</h2><br><br>
+        <h2>Contact:</h2><br><br>
         <form> 
-        <label for="Nombre">Nombre:</label>
+        <label for="Nombre">Name:</label>
         <input type="text" id="nombre"  name="nombre" placeholder="sara" required><br><br>
         <label for="Email">Email:</label>
         <input type="email" id="email"  name="email" placeholder="@example.com" required><br><br>
-        <label for="celular">Celular:</label>
+        <label for="celular">Phone:</label>
             <select country="select">
                 <option value="1"></option>+1: Estados Unidos, Canadá</option>
                 <option value="2">+7: Rusia, Kazajistán</option>
@@ -85,14 +109,14 @@
                 <option value="29">+971: Emiratos Árabes Unidos</option>
             </select>
         <input type="tel" id="celular"  name="celular" placeholder="3250468248" required><br><br>
-        <button type="submit">Enviar</button>
+        <button type="submit">Send</button>
         </form>
         </section>
     <footer>
-        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p> <br>
+        <p>&copy; 2026 My Website. All rights reserved.</p> <br>
         <ul>
-            <li><a href="">Política de Privacidad</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Contact</a></li>
         </ul>
     </footer>
 
