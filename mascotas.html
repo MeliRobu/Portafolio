@@ -2,52 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-widht, initial-scale=1.>
-    <!-- adapta el ancho del contenido segun el dispositivo usado -->
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="pet_styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MY PETS</title>
+    <link rel="stylesheet" href="pet_styles.css">
 </head>
-<body>
-    <header><h1>MIS MASCOTAS</h1></header>
-    <section>
-        <article class="card1">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMXMAzMptiMW_kQUcHw9mXKTr9t9ES5QnJoA&s" alt="Huron" width="400" height="250"> <!---- sirve con la image adress --><br> 
-            <div class="description1">
-                <h2>PET1</h2>
-                <p>A brief summary of the article content goes here...</p>
-                <details>
-                <summary>Read more</summary>
-                <p>This is a Border Collie, the most intelligent dog breed</p>
-                </details>
-            </div>
-        </article>
-    </section> 
-    <section>
-        <article class="card2">
-            <img src="https://static.nationalgeographicla.com/files/styles/image_3200/public/nationalgeographic2300875.webp?w=380&h=570" alt="Loro" width="250" height="400"> <br> <!--para colocar abajo de -->
-            <div class="description2">
-                <h2>PET2</h2>
-                <p>A brief summary of the article content goes here...</p>
-                <details>
-                <summary>Read more</summary>
-                <p>This is a Border Collie, the most intelligent dog breed</p>
-                </details>
-            </div>
-        </article>
-    </section>            
-    <section>
-        <article class="card3">
-            <img src="https://mywoof.com/cdn/shop/files/dog-breed-profile-border-collie_6137440267719120663_20250126.jpg" alt="Border collie" width="400" height="250""<br> 
-            <div class="description3">
-                <h2>PET2</h2>
-                <p>A brief summary of the article content goes here...</p>
-                <details>
-                <summary>Read more</summary>
-                <p>This is a Border Collie, the most intelligent dog breed</p>
-                </details>
-            </div>
-        </article>
-    </section>       
-</body>
 
+<body>
+
+    <header>
+        <h1>MIS MASCOTAS</h1>
+    </header>
+
+    <section class="cards"> <!--contenedor para agrupar contenido relacionado-->
+        <!--Mascota 1 -->
+        <article class="card">
+            <img src="https://www.hogarmania.com/archivos/202207/huron-domestico-125x125x80xX.jpg?1" alt="Hurón">
+            <div class="description">
+                <h2>PET 1</h2>
+                <p>A brief summary of the article content goes here...</p>
+
+                <details>
+                    <summary>Read more</summary>
+                    <p>This is a ferret, a playful and curious pet.</p>
+                </details>
+            </div>
+        </article>
+        <!-- Mascota 2 -->
+        <article class="card">
+            <img src="https://thumbs.dreamstime.com/b/periquito-azul-undulatus-del-melopsittacus-37878359.jpg" alt="Loro australiano">
+
+            <div class="description">
+                <h2>PET 2</h2>
+                <p>A brief summary of the article content goes here...</p>
+
+                <details>
+                    <summary>Read more</summary>
+                    <p>This is a parrot, known for its intelligence and ability to mimic sounds.</p>
+                </details>
+            </div>
+        </article>
+        <!-- Mascota 3 -->
+        <article class="card">
+            <img src="https://mywoof.com/cdn/shop/files/dog-breed-profile-border-collie_6137440267719120663_20250126.jpg" 
+                 alt="Border Collie" >
+
+            <div class="description">
+                <h2>PET 3</h2>
+                <p>A brief summary of the article content goes here...</p>
+
+                <details>
+                    <summary>Read more</summary>
+                    <p>This is a Border Collie, one of the most intelligent dog breeds.</p>
+                </details>
+            </div>
+        </article>
+    </section>
+
+</body>
 </html>
