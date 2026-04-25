@@ -97,6 +97,20 @@ a:active {
     border-radius:40px;
     color: white;
 }
+#changeTextBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 72, 218);
+    background-color: transparent;
+    color: rgb(255, 72, 218);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#changeTextBtn:hover {
+    background-color: rgb(255, 72, 218);
+    color: white;
+}
 
 #home:hover{
     background-color: rgb(143, 77, 204) ;
@@ -225,3 +239,47 @@ a:active {
 
 }
 
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: row; /* mantiene izquierda-derecha */
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        height: auto;
+    }
+
+    /* Portfolio izquierda */
+    header div {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    /* Menu derecha */
+    header nav {
+        width: auto;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column; /* columna */
+        align-items: flex-end; /* pegado derecha */
+        gap: 10px;
+    }
+
+    body {
+        height: auto;
+    }
+
+    #home,#yo,#proyectos,#contacto {
+        margin: 38% 5%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}

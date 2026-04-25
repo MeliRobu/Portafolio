@@ -82,3 +82,25 @@ a{
 .card:hover p,details{
     color: black
 }
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+        margin: 0 10% 0 10%;
+    }
+    .card {
+        width: 100%;
+    }
+    header {
+        display: flex;
+        flex-direction: row; /* mantiene izquierda-derecha */
+        justify-content: space-between;
+        padding: 20px;
+        height: auto;
+    }
+    header ul {
+        position: static;
+        display: flex;
+        gap: 20px;
+    }
+}
